@@ -1,0 +1,16 @@
+{
+  "name": "Rare Disease Planet",
+  "short_name": "Rare Disease Planet",
+  "description": "A living globe of rare disease families.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14081c",
+  "theme_color": "#14081c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
