@@ -25,7 +25,9 @@
     "variant": "Variant",
     "town": "Town / city",
     "close": "Close",
-    "alwaysVisible": "Always on the globe"
+    "alwaysVisible": "Always on the globe",
+    "exonEditorLabel": "View in Exon Editor",
+    "viewGene": "{{gene}} gene"
   },
   "survey": {
     "title": "Join Rare Disease Planet",
@@ -129,6 +131,9 @@
     "oi": "Osteogenesis imperfecta",
     "pws": "Prader-Willi syndrome",
     "angelman": "Angelman syndrome",
+    "srs": "Silver-Russell syndrome",
+    "bws": "Beckwith-Wiedemann syndrome",
+    "fshd": "Facioscapulohumeral muscular dystrophy",
     "tsc": "Tuberous sclerosis complex",
     "nf1": "Neurofibromatosis",
     "rp": "Retinitis pigmentosa",

@@ -25,7 +25,9 @@
     "variant": "Variant",
     "town": "Ville",
     "close": "Fermer",
-    "alwaysVisible": "Toujours sur le globe"
+    "alwaysVisible": "Toujours sur le globe",
+    "exonEditorLabel": "Voir dans Exon Editor",
+    "viewGene": "Gène {{gene}}"
   },
   "survey": {
     "title": "Rejoindre Rare Disease Planet",
@@ -129,6 +131,9 @@
     "oi": "Ostéogenèse imparfaite",
     "pws": "Syndrome de Prader-Willi",
     "angelman": "Syndrome d’Angelman",
+    "srs": "Syndrome de Silver-Russell",
+    "bws": "Syndrome de Beckwith-Wiedemann",
+    "fshd": "Dystrophie musculaire facio-scapulo-humérale",
     "tsc": "Sclérose tubéreuse de Bourneville",
     "nf1": "Neurofibromatose",
     "rp": "Rétinite pigmentaire",
