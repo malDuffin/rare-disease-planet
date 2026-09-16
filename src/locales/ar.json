@@ -25,7 +25,9 @@
     "variant": "المتغير",
     "town": "المدينة",
     "close": "إغلاق",
-    "alwaysVisible": "دائمًا على الكرة"
+    "alwaysVisible": "دائمًا على الكرة",
+    "exonEditorLabel": "عرض في Exon Editor",
+    "viewGene": "جين {{gene}}"
   },
   "survey": {
     "title": "الانضمام إلى Rare Disease Planet",

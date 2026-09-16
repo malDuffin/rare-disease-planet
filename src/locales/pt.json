@@ -25,7 +25,9 @@
     "variant": "Variante",
     "town": "Cidade / vila",
     "close": "Fechar",
-    "alwaysVisible": "Sempre no globo"
+    "alwaysVisible": "Sempre no globo",
+    "exonEditorLabel": "Ver no Exon Editor",
+    "viewGene": "Gene {{gene}}"
   },
   "survey": {
     "title": "Juntar-se a Rare Disease Planet",

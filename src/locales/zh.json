@@ -25,7 +25,9 @@
     "variant": "变异",
     "town": "城镇",
     "close": "关闭",
-    "alwaysVisible": "始终显示在地球仪上"
+    "alwaysVisible": "始终显示在地球仪上",
+    "exonEditorLabel": "在 Exon Editor 中查看",
+    "viewGene": "{{gene}} 基因"
   },
   "survey": {
     "title": "加入 Rare Disease Planet",

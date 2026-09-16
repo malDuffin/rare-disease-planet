@@ -25,7 +25,9 @@
     "variant": "वैरिएंट",
     "town": "शहर / कस्बा",
     "close": "बंद करें",
-    "alwaysVisible": "हमेशा ग्लोब पर"
+    "alwaysVisible": "हमेशा ग्लोब पर",
+    "exonEditorLabel": "Exon Editor में देखें",
+    "viewGene": "{{gene}} जीन"
   },
   "survey": {
     "title": "Rare Disease Planet से जुड़ें",

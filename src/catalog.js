@@ -77,6 +77,66 @@ export const RELATIONSHIP_KEYS = [
   'other',
 ];
 
+/**
+ * Gene metadata for genetic rare diseases.
+ * Maps disease keys to their associated gene symbol(s).
+ * Used to generate Exon Editor links for diseases with known genetic causes.
+ */
+export const DISEASE_GENES = {
+  dmd: ['DMD'],
+  bmd: ['DMD'],
+  sma: ['SMN1', 'SMN2'],
+  hd: ['HTT'],
+  cf: ['CFTR'],
+  als: ['SOD1', 'C9orf72', 'FUS', 'TARDBP'],
+  rett: ['MECP2'],
+  fragile_x: ['FMR1'],
+  pompe: ['GAA'],
+  gaucher: ['GBA'],
+  fabry: ['GLA'],
+  pku: ['PAH'],
+  hemophilia: ['F8', 'F9'],
+  marfan: ['FBN1'],
+  eds: ['COL5A1', 'COL5A2', 'COL3A1'],
+  oi: ['COL1A1', 'COL1A2'],
+  pws: ['SNRPN', 'NDN', 'MAGEL2'],
+  angelman: ['UBE3A'],
+  tsc: ['TSC1', 'TSC2'],
+  nf1: ['NF1'],
+  rp: ['RHO', 'RPGR', 'USH2A'],
+  friedreich: ['FXN'],
+  myotonic: ['DMPK', 'CNBP'],
+  lgmd: ['CAPN3', 'DYSF', 'SGCA', 'SGCB'],
+  cmt: ['PMP22', 'MFN2', 'GJB1'],
+  eb: ['KRT5', 'KRT14', 'COL7A1'],
+  sickle_cell: ['HBB'],
+  thalassemia: ['HBA1', 'HBA2', 'HBB'],
+};
+
+export const EXON_EDITOR_BASE_URL = 'https://exoneditor.com';
+
+/**
+ * Check if a disease has associated gene(s) in the catalogue.
+ */
+export function diseaseHasGenes(diseaseKey) {
+  return diseaseKey && Object.hasOwn(DISEASE_GENES, diseaseKey);
+}
+
+/**
+ * Get the gene symbol(s) for a disease key.
+ * Returns an array of gene symbols, or an empty array if none.
+ */
+export function getGenesForDisease(diseaseKey) {
+  return DISEASE_GENES[diseaseKey] || [];
+}
+
+/**
+ * Build an Exon Editor URL for a given gene symbol.
+ */
+export function buildExonEditorUrl(geneSymbol) {
+  return `${EXON_EDITOR_BASE_URL}/?gene=${encodeURIComponent(geneSymbol)}`;
+}
+
 export function countryName(code, locale) {
   if (!code) return '';
   try {

@@ -25,7 +25,9 @@
     "variant": "バリアント",
     "town": "市区町村",
     "close": "閉じる",
-    "alwaysVisible": "地球儀に常時表示"
+    "alwaysVisible": "地球儀に常時表示",
+    "exonEditorLabel": "Exon Editor で見る",
+    "viewGene": "{{gene}} 遺伝子"
   },
   "survey": {
     "title": "Rare Disease Planet に参加",

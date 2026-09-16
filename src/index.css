@@ -459,6 +459,48 @@ button { cursor: pointer; }
   min-width: 36px;
 }
 
+.exon-editor-links {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.exon-editor-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.exon-gene-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.exon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(213, 138, 242, 0.15);
+  border: 1px solid rgba(213, 138, 242, 0.35);
+  color: var(--orchid);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+.exon-link:hover {
+  background: rgba(213, 138, 242, 0.25);
+  border-color: var(--orchid);
+}
+.exon-link::after {
+  content: '↗';
+  font-size: 0.75rem;
+}
+
 .qr-box {
   display: grid;
   justify-items: center;

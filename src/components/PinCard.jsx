@@ -1,10 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { countryName, diseaseLabel } from '../catalog.js';
+import { countryName, diseaseLabel, getGenesForDisease, buildExonEditorUrl } from '../catalog.js';
 
 export default function PinCard({ pin, onClose }) {
   const { t, i18n } = useTranslation();
   const locale = (i18n.resolvedLanguage || 'en').split('-')[0];
   if (!pin) return null;
+
+  const genes = getGenesForDisease(pin.rareDiseaseKey);
+
   return (
     <article className="pin-card" role="dialog" aria-label={t('pin.alwaysVisible')}>
       <button type="button" className="close" onClick={onClose} aria-label={t('pin.close')}>
@@ -34,6 +37,25 @@ export default function PinCard({ pin, onClose }) {
           </div>
         ) : null}
       </dl>
+      {genes.length > 0 && (
+        <div className="exon-editor-links">
+          <p className="exon-editor-label">{t('pin.exonEditorLabel')}</p>
+          <ul className="exon-gene-list">
+            {genes.map((gene) => (
+              <li key={gene}>
+                <a
+                  href={buildExonEditorUrl(gene)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="exon-link"
+                >
+                  {t('pin.viewGene', { gene })}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </article>
   );
 }
